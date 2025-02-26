@@ -1,4 +1,4 @@
-#include "cat.h"
+#include "../include/cat.h"
 
 void simple_write(FILE* fr, FILE* fout) {
   char c;

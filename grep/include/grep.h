@@ -1,5 +1,6 @@
 #ifndef GREP
 #define GREP
+
 #include <ctype.h>
 #include <getopt.h>
 #include <regex.h>

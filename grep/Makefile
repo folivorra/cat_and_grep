@@ -1,12 +1,14 @@
 GCC=gcc -Wall -Werror -Wextra -std=c11
-CLANG=clang-format -i *.c *.h
+SRCS=src/*.c
+EXENAME=build/s21_grep
 
-all: rebuild
+all: $(EXENAME)
 
-s21_grep: main.c grep.c
-	$(GCC) $^ -g -pedantic -o s21_grep 
+$(EXENAME): $(SRCS)
+	mkdir -p build
+	$(GCC) $^ -g -pedantic -o $(EXENAME)
 
 clean:
-	rm -f *s21_grep
+	rm -rf build
 
-rebuild: clean s21_grep
+rebuild: clean $(EXENAME)

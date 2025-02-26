@@ -1,5 +1,6 @@
 #ifndef CAT
 #define CAT
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

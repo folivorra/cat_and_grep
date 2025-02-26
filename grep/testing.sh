@@ -24,7 +24,7 @@ fi
 
 run_test() {
     local cmd="$1"
-    ./s21_grep $cmd > s21_grep.txt
+    build/s21_grep $cmd > s21_grep.txt
     grep $cmd > grep.txt
     DIFF_RESULT="$(diff s21_grep.txt grep.txt)"
 

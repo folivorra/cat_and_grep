@@ -17,7 +17,7 @@ do
       do
         if [ "$var" != "$var2" ] && [ "$var2" != "$var3" ] && [ "$var" != "$var3" ] && [ "$var" != "$var4" ] && [ "$var2" != "$var4" ] && [ "$var3" != "$var4" ]
         then          
-          DIFF_RES="$(diff -a <(./s21_cat $var $var2 $var3 $var4 "$TEST_FILE") <(cat $var $var2 $var3 $var4 "$TEST_FILE"))"
+          DIFF_RES="$(diff -a <(build/s21_cat $var $var2 $var3 $var4 "$TEST_FILE") <(cat $var $var2 $var3 $var4 "$TEST_FILE"))"
           
           if [ -z "$DIFF_RES" ]; then
             (( COUNTER_SUCCESS++ ))

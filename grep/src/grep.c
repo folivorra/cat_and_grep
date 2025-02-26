@@ -1,4 +1,4 @@
-#include "grep.h"
+#include "../include/grep.h"
 
 int apply_flags(flags f) {
   int flag = 0, err = 0, err_f = 0;

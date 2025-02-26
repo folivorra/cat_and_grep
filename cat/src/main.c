@@ -1,4 +1,4 @@
-#include "cat.h"
+#include "../include/cat.h"
 
 typedef struct bool {
   int b;

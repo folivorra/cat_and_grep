@@ -1,4 +1,4 @@
-#include "grep.h"
+#include "../include/grep.h"
 
 int parser(int argc, char* argv[], flags* f);
 
