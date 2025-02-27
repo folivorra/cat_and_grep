@@ -12,3 +12,6 @@ clean:
 	rm -rf build
 
 rebuild: clean $(EXENAME)
+
+test:
+	sh testing.sh
