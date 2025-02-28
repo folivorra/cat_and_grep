@@ -36,8 +36,8 @@
 ## Build, run and testing
 
 ```bash
-$make
-$build/s21_grep [OPTIONS] TEMPLATE [FILE]
-$build/s21_cat [OPTION] [FILE]...
-$make testing //for both makefiles
+$ make
+$ build/s21_grep [OPTIONS] TEMPLATE [FILE]
+$ build/s21_cat [OPTION] [FILE]...
+$ make testing //for both makefiles
 ```
